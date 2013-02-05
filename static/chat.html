@@ -11,7 +11,7 @@ WEB_SOCKET_SWF_LOCATION = "/WebSocketMain.swf";
 WEB_SOCKET_DEBUG = true;
 
 // socket.io specific code
-var socket = io.connect();
+var socket = io.connect("/chat");
 
 socket.on('connect', function () {
     $('#chat').addClass('connected');
